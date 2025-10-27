@@ -82,6 +82,13 @@ public class b_Department {
 	private Team_UI ui;
 	private Team_Web web;
 	
+	// OOP Concept အရ static ဆိုတဲ့ keyword ကို Class က ပိုင်တယ် ဒါကြောင့် fund ဆိုတဲ့ keyword ကို တခြား Class က ခေါ်မယ်ဆိုရင်
+	// fund ရဲ့ parent class ဖြစ်တဲ့ b_Department.fund ဆိုပြီးခေါ်သင့်တယ် c_DepartmentTest_StaticFinal ထဲမှာကြည့်နိုင်တယ်
+	public static int fund;
+	
+	// Project တစ်ခုလုံးမှာ တန်ဖိုးမပြောင်းပဲ Final Constant အနေနဲ့သုံးချင်ရင် final keyword ကိုသုံးရတယ် နာမည်ကို အကြီးတွေနဲ့ချည်းရေးပေးရတယ်
+	public static final int ID = 1;
+	
 	// ui ရဲ့ Object က Team_UI ဖြစ်သည့်အတွက် Paramter ထဲက Datatype မှာလည်း Team_UI Object ဖြစ်ပေးရမယ်
 	// ဒီ b_Department ဆိုတဲ့ Class ကို တခြား Class က Object ဆောက်မယ်ဆိုရင် Constructor ခေါ်ရမှာမို့ Team_UI နဲ့ Team_Web ဆိုတဲ့ Object 2 ခုလုံးပါသည့်
 	// Constructor ကိုသုံးရမှာဖြစ်သည့်အတွက် c_DepartmentTest_StaticFinal ထဲမှာ Object အကုန်လုံးကို ပြန်ချိတ်ပေးရတယ်
@@ -89,6 +96,7 @@ public class b_Department {
 		super();
 		this.ui = ui;
 		this.web = web;
+		fund = 50000;
 	}
 	
 	// getter and setter for Team_UI
@@ -107,6 +115,19 @@ public class b_Department {
 	
 	public void setWeb(Team_Web web) {
 		this.web = web;
+	}
+	
+	// getter and setter for int fund
+	public static int getFund() {
+		return fund;
+	}
+
+	public static void setFund(int fund) {
+		b_Department.fund = fund;
+	}
+	
+	public void giveFund(int amount) {
+		fund -= amount;
 	}
 	
 	@Override
