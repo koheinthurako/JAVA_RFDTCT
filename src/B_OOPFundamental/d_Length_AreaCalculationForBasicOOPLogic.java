@@ -3,6 +3,7 @@ package B_OOPFundamental;
 public class d_Length_AreaCalculationForBasicOOPLogic {
 	
 	// ဒီ Length Class က တစ်ခုတည်းရပ်တည်နိုင်ပြီး သူ့ကို Rectangle Class ထဲမှာ Object အနေနဲ့ ယူသုံးထားတာမို့ ဒါဟာ Aggregation Concept ဖြစ်တယ်
+	// Project တစ်ခုဖြစ်မြောက်ဖို့အတွက် Class ၂ ခု ပေါင်းသုံးနေရတယ်ဆိုရင် Association Concept ဖြစ်တယ်
 
 	private int feet;
 	private int inches;
