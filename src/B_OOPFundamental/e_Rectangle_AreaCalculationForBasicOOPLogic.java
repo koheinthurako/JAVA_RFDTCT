@@ -39,7 +39,6 @@ public class e_Rectangle_AreaCalculationForBasicOOPLogic {
 	}
 	
 	public void AreaCalculation() {
-		width.convertInches();
 		int area = width.convertInches() * height.convertInches();
 		d_Length_AreaCalculationForBasicOOPLogic length = new d_Length_AreaCalculationForBasicOOPLogic();
 		// output မှာ ဘယ်လိုဖြစ်ပြီး 31' 6" ဆိုပြီး ထွက်လာရလဲဆိုရင်တော့ d_Length_AreaCalculationForBasicOOPLogic Class ထဲက
