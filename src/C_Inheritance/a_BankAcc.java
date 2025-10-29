@@ -9,13 +9,24 @@ public class a_BankAcc {
 	
 	private String name;
 	private int acc_no;
-	private double amount;
+	// ဒီနေရာမှာ protected ဆိုတဲ့ Keyword ကလည်း Inheritance သဘောတရားနဲ့ တွဲပြီးအလုပ်လုပ်သည်
+	// private ကိုသုံးတဲ့အခါမှာ အောက်က amount တန်ဖိုးကို တခြား class တွေကယူသုံးချင်တဲ့အခါ ပုံမှန်အတိုင်း Object ဆောက်ပြီးသုံးရတယ်
+	// ဒီ protected ကိုသုံးလိုက်တဲ့အခါမှာ သူ့ရဲ့ Child class ဖြစ်တဲ့ class တွေက Inheritance သဘောတရားနဲ့ ယူသုံးလို့ရသွားတယ်
+	protected double amount;
 	
 	public a_BankAcc(String name, double amount) {
 		super();
 		this.name = name;
 		this.acc_no = acc_no;
 		this.amount = amount;
+	}
+	
+	public void withdraw(int withdraw_amount) {
+		amount-=withdraw_amount;
+	}
+	
+	public void deposit(int add_amount) {
+		amount += add_amount;
 	}
 
 	@Override

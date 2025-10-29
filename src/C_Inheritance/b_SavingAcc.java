@@ -15,6 +15,14 @@ public class b_SavingAcc extends a_BankAcc{
 //		System.out.println(super+""); // ဒီလို ရေးရာတွင် super လို့ output ထုတ်တာသည် super.toString() method ကိုခေါ်ခြင်းဖြစ်သည်
 		this.book = book;
 	}
+	
+	public void withdraw(int withdraw_amount) {
+		if(withdraw_amount>300) {
+			System.out.println("Withdraw amount exceed!");
+		} else {
+			
+		}
+	}
 
 	@Override
 	public String toString() {
