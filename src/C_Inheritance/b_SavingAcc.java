@@ -19,7 +19,7 @@ public class b_SavingAcc extends a_BankAcc{
 	@Override
 	public String toString() {
 		// ဒီ Class ရဲ့ super class က a_BankAcc ဖြစ်တယ်
-		return super.toString();
+		return super.toString() + "(Book : " + book + ")";
 	}
 	
 	
