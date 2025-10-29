@@ -9,11 +9,19 @@ public class b_SavingAcc extends a_BankAcc{
 	
 	private boolean book;
 	
-	public b_SavingAcc(String name, int acc_no, double amount, boolean book) {
+	public b_SavingAcc(String name, double amount, boolean book) {
 		// super ဆိုတာ parent class ကို ကိုယ်စားပြုခြင်းဖြစ်ပြီး သူ့ကို Constructor ရဲ့ ထိပ်ဆုံးလိုင်းမှာ ရေးပေးရတယ် မရေးရင် Error တက်တယ် ဒါက Java မှသတ်မှတ်ထားသည့် Rule
-		super(name, acc_no, amount);
+		super(name, amount);
 //		System.out.println(super+""); // ဒီလို ရေးရာတွင် super လို့ output ထုတ်တာသည် super.toString() method ကိုခေါ်ခြင်းဖြစ်သည်
-		this.book = book; 
+		this.book = book;
 	}
+
+	@Override
+	public String toString() {
+		// ဒီ Class ရဲ့ super class က a_BankAcc ဖြစ်တယ်
+		return super.toString();
+	}
+	
+	
 	
 }

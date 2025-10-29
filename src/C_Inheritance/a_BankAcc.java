@@ -11,13 +11,19 @@ public class a_BankAcc {
 	private int acc_no;
 	private double amount;
 	
-	public a_BankAcc(String name, int acc_no, double amount) {
+	public a_BankAcc(String name, double amount) {
 		super();
 		this.name = name;
 		this.acc_no = acc_no;
 		this.amount = amount;
 	}
-	
+
+	@Override
+	public String toString() {
+		// ဒီ Acc ရဲ့ super class က Java ရဲ့ Object ဖြစ်တယ်
+//		return super.toString();
+		return name + " " + amount;
+	}
 	
 	
 
