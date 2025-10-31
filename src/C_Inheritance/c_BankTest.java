@@ -24,6 +24,7 @@ public class c_BankTest {
 		
 		// အပေါ်မှာရေးထားတဲ့အတိုင်း acc တွေကို output ထုတ်ချင်တော့ တစ်ကြောင်းချင်းစီရေးရတယ် Polymorphism ကိုသုံးလိုက်တော့ Datatype တူသွားလို့
 		// အလွယ် Loop ပတ်လို့ရသွားပါတယ်
+		// အောက်က deposit method က ကျတော့ b_SavingAcc ထဲမှာမရှိဘူး Parent a_BankAcc ထဲက method ကို Inheritance နဲ့ ခေါ်သုံးလိုက်တာ
 		s_acc.deposit(100);
 		
 		a_BankAcc [] accs = {acc, s_acc, sp_acc};
@@ -31,9 +32,11 @@ public class c_BankTest {
 			System.out.println(ac);
 		}
 		
-		// Special Account မှာ အနည်းဆုံး ၁၀ ချန်ထားမှရမယ်ဆိုတဲ့ Method ကိုရေးချင်တဲ့အခါ
-		s_acc.withdraw(300);
-		System.out.println(s_acc);
+		s_acc.withdraw(200);
+		System.out.println("Saving Account : " + s_acc);
+		
+		sp_acc.withdraw(100);
+		System.out.println("Special Account : " + sp_acc);
 		
 	}
 

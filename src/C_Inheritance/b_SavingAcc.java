@@ -16,11 +16,15 @@ public class b_SavingAcc extends a_BankAcc{
 		this.book = book;
 	}
 	
+	@Override
+	// Parent method က method ကို Override ပြန်လုပ်တယ်ဆိုတဲ့သဘောဖြစ်ပြီး method name ပြောင်းသွားတာနဲ့ Override သဘောတရားမဟုတ်တော့ပါ
 	public void withdraw(int withdraw_amount) {
 		if(withdraw_amount>300) {
 			System.out.println("Withdraw amount exceed!");
 		} else {
-			
+			super.amount-=withdraw_amount;
+			System.out.println("Successfully withdraw!");
+			System.out.println("Your remaining balance : " + super.amount);
 		}
 	}
 
