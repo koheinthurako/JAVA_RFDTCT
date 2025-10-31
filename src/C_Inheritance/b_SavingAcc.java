@@ -27,7 +27,11 @@ public class b_SavingAcc extends a_BankAcc{
 			System.out.println("Your remaining balance : " + super.amount);
 		}
 	}
-
+	
+	public void calculate_interest() {
+		System.out.println("Annual amount with interest : " + amount + (amount*5.6/100));
+	}
+	
 	@Override
 	public String toString() {
 		// ဒီ Class ရဲ့ super class က a_BankAcc ဖြစ်တယ်
