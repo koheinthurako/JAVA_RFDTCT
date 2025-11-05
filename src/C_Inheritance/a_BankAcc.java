@@ -35,7 +35,7 @@ public class a_BankAcc {
 		Random r = new Random();
 		for(int i=0; i<accs.length; i++) {
 			while(accs[i].acc_no==0) {
-				int temp_no = r.nextInt(5)+1;
+				int temp_no = r.nextInt(accs.length)+1;
 				if(!isContain(accs, temp_no)) {
 					accs[i].acc_no = temp_no;
 				}
