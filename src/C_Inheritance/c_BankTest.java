@@ -53,7 +53,11 @@ public class c_BankTest {
 		sp_acc.withdraw(100);
 		System.out.println("Special Account : " + sp_acc);
 		
+		a_BankAcc.generate_Account_No(accs);
 		
+		for(a_BankAcc ac : accs ) {
+			System.out.println(ac);
+		}
 		
 	}
 
